@@ -15,15 +15,29 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('DASHBOARD') }}
                     </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('estoque')">
+
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('user')">
+                        {{ __('USUÁRIOS') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('stock')">
                         {{ __('ESTOQUE') }}
                     </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('products')">
+
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('product')">
                         {{ __('PRODUTOS') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('brand')">
+                        {{ __('MARCAS') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('category')">
+                        {{ __('CATEGORIAS') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('subCategory')">
+                        {{ __('SUB CATEGORIAS') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -78,7 +92,31 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+                {{ __('DASHBOARD') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('user')">
+                {{ __('USUÁRIOS') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('stock')">
+                {{ __('ESTOQUE') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('product')">
+                {{ __('PRODUTOS') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('brand')">
+                {{ __('MARCAS') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('category')">
+                {{ __('CATEGORIAS') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('subCategory')">
+                {{ __('SUB CATEGORIAS') }}
             </x-responsive-nav-link>
         </div>
 
