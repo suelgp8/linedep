@@ -33,14 +33,18 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Esqueceu sua senha?') }}
-                </a>
-            @endif
+            
+            <!-- 
+                @if (Route::has('password.request'))
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                        {{ __('Esqueceu sua senha?') }}
+                    </a>
+                @endif
+            -->
+            
 
             &nbsp; &nbsp; 
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <button class="bg-gray-800 hover:bg-gray-500 text-white font-bold py-2 px-6 rounded-full">
                 {{ __('Log in') }}
             </button>
         </div>

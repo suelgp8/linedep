@@ -20,6 +20,9 @@
                 <a href="/">
                     
                     <img  class="w-20 h-20 fill-current text-gray-500" src="icon-dep.jpeg" alt="icone">
+                    <p>
+                        &nbsp; LINE DEP
+                    </p>
                 </a>
             </div>
 
